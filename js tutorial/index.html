@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <h1 id="demo">hello from Ashraf</h1>
+
+    <script>
+       //output in java//
+    //alert("Hello world!")//pop-up and default functoin of browser object model//
+    //document.write("hello world!")
+
+    document.getElementsByTagName('BODY')[0].innerHTML = "Hello form me";
+
+    //developer perspective outputs//
+    console.log ("hello") ;
+
+    //variables in java//
+    greetings = "hello";
+
+    //declare variables with keywords//
+    var firstName = "Ashraf";//global scoped 
+
+    //let and coNst ES6 standard//
+    let lastName = "Ahmed"//preferable
+    const PI = 3.1416
+
+    console.log("PI");
+
+    //declaration 
+
+    var
+    firstName = "Ashraf";
+    //assignment
+    //firstName = "Ahmed";
+    //use or acces
+    console.log(firstName);
+
+    //data time in js
+    var a = 15;
+    b = 2.5;
+    c = "hello";
+    console.log(a);
+   //plus operato '+' : overloaded operator
+   //addition and concatanation
+    console.log(firstName+"  "+lastName);
+
+    document.write(firstName+"  "+lastName);
+
+
+//complex data type
+//array : a variable with multiple data 
+//declaration : array literal 
+
+var students = ["A", "B", "22", "abs"];
+//access
+console.log(students[3]);
+
+for (s of students){
+    console.log(s)
+}
+//object:object  literal
+//let car = {};
+//console.log(car); //define an object 
+
+//console.log(typeof car);
+//jason structure 
+let car = {
+    //key : value pair
+    door: 4,
+    window : 4,
+    seat : ["s1", "s2", "s3", "s4",],
+    color:"red"
+    //drive: function (name){
+     // alert ("i am driving");
+
+//}
+
+};
+
+//forin loop
+for (p in car){
+    console.log(p);//to get object keys
+    console.log(car[p]);//to get object value
+}
+
+console.log(car.color);
+//car.drive("eshikhon");
+//document.write(car.drive("eshikhon"));
+
+//function defeyning in js
+function getFullName (firstName, lastName){
+    return firstName + "   " +lastName;
+}
+//function asbobject in JS
+    getFullName("Ashraf", "Ahmed");
+    console.log(getFullName("Ashraf", "Ahmed"));
+//JS used in mainly browser
+//BOM : browser object model
+//pop-up: BOM withPivot(keys)
+    //prompt("Enter your name");
+    //get the value in pompt
+var myName =  prompt("Enter your name");
+document.write(myName)
+
+var delConfirm = confirm("Are you sure want to delet");
+document.write(delConfirm);//true or false 
+
+var demoH1 = document.querySelector("#demo");
+console.log(demoH1);
+    </script>
+</body>
+</html>

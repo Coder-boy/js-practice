@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <select  id="countries">
+            <option value="">Select your countries</option>
+            <option value="1">Bangladesh</option>
+            <option value="2">KSA</option>
+            <option value="3">UK</option>
+        </select>
+    </div>
+    <div id="selectedNum">
+        
+        
+    </div>
+
+    
+    <script type="text/javascript">
+    var x =document.querySelector("#countries").value ;
+    document.querySelector("#countries").addEventListener("change",function () {
+        var selectedMyCountries = this.value;
+
+        if (selectedMyCountries==1) {
+            document.querySelector("#selectedNum").innerHTML='<br/><select  id="city"><option value="">Select your city</option><option value="">Dhaka</option><option value="">Sylhet</option><option value="">Rajshahi</option></select>'
+            
+        }else if (selectedMyCountries==2) {
+            document.querySelector("#selectedNum").innerHTML='<br/><select  id="city"><option value="">Select your city</option><option value="">Riyad</option><option value="">Makka</option><option value="">Jeddah</option></select>'
+
+        }else if (selectedMyCountries==3) {
+            document.querySelector("#selectedNum").innerHTML='<br/><select  id="city"><option value="">Select your city</option><option value="">London</option><option value="">Liverpool</option><option value="">Baminghum</option></select>'
+
+        }else  {
+            document.querySelector("#selectedNum").innerHTML=""
+        }
+        
+    });
+    </script>
+</body>
+</html>

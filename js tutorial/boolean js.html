@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <p id="demo"></p>
+
+        <script>
+        var b1 = Boolean(80);
+        var b2 = Boolean(2.30);
+        var b3 = Boolean(-30);
+        var b4 = Boolean("sd");
+        var b5 = Boolean('ff');
+        var b6 = Boolean(1+3+90.45);
+        var b7 = Boolean(0);
+        document.getElementById("demo").innerHTML = 
+        "80 is" + b1 +"<br>"+
+        "2.30 is" + b2 +"<br>"+
+        "-10 is" + b3 + "<br>" +
+        "Any (not empty) string is" + b4 + "<br>"+
+        "ANY expression (expact zero) is"+b6+"<br>"+
+        "Zero is"+b7;
+
+        
+        </script>
+     
+</body>
+</html>

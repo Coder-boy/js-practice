@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>bkash</legend>
+            <div class="form-group">
+                <label for="">Cashout</label>
+                <input type="number" class="form-control prc" name="" id="">
+            </div>
+            <div class="form-group">
+                    <label for="">Vat</label>
+                    <input type="number" class="form-control prc" name="" id="">
+                </div>
+                <div class="form-group">
+                        <label for="">Total</label>
+                        <output id="result"  > </output>
+                    </div>
+        </fieldset>
+    </form>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+<script>
+
+    $ ('.form-group').on('input',' .prc',function(){
+        var totalSum = 0;
+        $('.form-group .prc').each(function({
+            var inputVal = $(this).val();
+            if ($.isNumbaric(inputVal)){
+                totalSum += parseFloat (inputVal);
+
+            }
+        });
+        $('#result').val(totalSum);
+
+    });
+</script>
+    <script>
+
+        function bkash(cashout,vat){
+            var totalVat = vat * cashout;
+            var totalFee = cashout - totalVat;
+            
+            
+            
+        }
+        
+document.getElementById("broker_fees").innerHTML = bkash;
+
+    </script>
+
+
+</body>
+</html>

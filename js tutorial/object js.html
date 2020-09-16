@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        var car = { type:"camry", madel:2016, color:"gray"};
+        document.getElementById("demo").innerHTML = car.madel;
+
+        var person = { firstName:"Ashraf", lastName:"Ahmed", age:24, eyeColor:"black"};
+
+        document.getElementById("demo1").innerHTML =
+        person.firstName + " has " + person.eyeColor + " eyes ";
+
+        var studentName1 = "Ashraf";
+        var studentName2 = 'Ahmed';
+
+        document.getElementById("demo2").innerHTML =
+        studentName1 + "<br>" + studentName2;
+
+        var line1 = "it's cabout time";
+        var line2 = 'He is called "na"';
+        var line3 = "He is called 'me'"
+
+        document.getElementById("demo3").innerHTML =
+        line1 + "<br>" + line2 + "<br>" + line3;
+
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        
+        document.getElementById("demo4").innerHTML = txt.length;
+
+        var y = "we are the best /"pleyers/" in the countrey";
+        document.getElementById("demo5").innerHTML = y;
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

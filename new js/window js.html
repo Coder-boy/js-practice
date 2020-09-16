@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="windowopen">print</button>
+    <button id="windowopen1">print1</button>
+
+    <script>
+        document.querySelector("#windowopen").addEventListener("click",function () {
+            window.open("https://youtube.com/","print window","height=500px,width=700px,left=350%,top=100%")
+            
+        })
+        document.querySelector("#windowopen1").addEventListener("click",function () {
+           var mywindow = window.open(null,"print window","height=500px,width=700px,left=350%,top=100%");
+           mywindow.document.write("heloo"); 
+        })
+    </script>
+</body>
+</html>

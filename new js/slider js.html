@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    #container {
+        width: 960px;margin: 20px auto;
+    }
+    #container .slider_item img{
+        width: 100%;
+        height: 400px;
+
+    }
+    .slider_container {
+        position: relative
+    }
+    .slider_container .slider_item{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: all 1s;
+}
+.slider_container .slider_item.active{
+opacity: 1
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="slider_container">
+            <div class="slider_item active"><img src="img/img0.jpg" alt=""></div>
+            <div class="slider_item active"><img src="img/img1.jpg" alt=""></div>
+            <div class="slider_item active"><img src="img/img2.jpg" alt=""></div>
+            <div class="slider_item active"><img src="img/img3.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    setInterval (function () {
+    if (document.getElementsByClassName("slider_item")[0].classList.contains("active")) {
+
+        document.getElementsByClassName("slider_item")[1].classList.add("active");
+        document.getElementsByClassName("slider_item")[0].classList.remove("active");
+
+    }else if (document.getElementsByClassName("slider_item")[1].classList.contains("active")) {
+
+        document.getElementsByClassName("slider_item")[2].classList.add("active");
+        document.getElementsByClassName("slider_item")[1].classList.remove("active");
+
+    }else if (document.getElementsByClassName("slider_item")[2].classList.contains("active")) {
+
+        document.getElementsByClassName("slider_item")[3].classList.add("active");
+        document.getElementsByClassName("slider_item")[2].classList.remove("active");
+
+    }else if (document.getElementsByClassName("slider_item")[3].classList.contains("active")) {
+
+        document.getElementsByClassName("slider_item")[0].classList.add("active");
+        document.getElementsByClassName("slider_item")[3].classList.remove("active");
+    }
+    },2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <button id="show">fade in</button>
+    <button id="hide">fade out</button>
+    
+    <button id="Fade">Fade toggle</button>
+    <button id="FadeTo">Fade to</button>
+<br />
+<br /> 
+    <div id="demo" style="display: none;width: 250px;padding: 50px 10px;background: black; color: whitesmoke;text-align: center;">
+Hello Ashraf!
+    </div>
+<br />
+<br />
+    <div id="demoo" style="width: 250px;padding: 50px 10px;background: black; color: whitesmoke;text-align: center;">
+        Hello Ashraf!
+            </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+            $("#show").click(function () {
+
+                $("#demo").fadeIn(2000);
+            });
+
+            $("#hide").click(function () {
+
+            $("#demo").fadeOut(1000);
+            });
+            
+            $("#Fade").click(function () {
+
+            $("#demo").fadeToggle(2000);
+            });
+
+            $("#FadeTo").click(function () {
+
+            $("#demoo").fadeTo(1000,0.2);
+            });
+
+    
+            
+                
+            
+        });
+        </script>
+</body>
+</html>

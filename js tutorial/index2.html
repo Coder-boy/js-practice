@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .warning{
+            background-color: aqua
+        }
+    </style>
+</head>
+<body>
+    <p id="demo" onmousemove="alert('hello') ">hello from Ashraf</p>
+    <button type="button" id="demoBtn">
+        Login
+        </button>
+        
+    <script>
+
+
+         let btn = document.querySelector("#demoBtn");//button : target 
+//handler
+function loadData () {
+    //alert("load data function has been called");
+    var demoH1 = document.querySelector("#demo");
+        demoH1.innerHTML = "hello from js";
+         console.log(demoH1);
+         demoH1.setAttribute("class", "warning");
+         demoH1.style.backgroundColor = "blue"
+
+}
+//registration
+btn.addEventListener('click', loadData, false,);//by default 
+
+    </script>
+</body>
+</html>

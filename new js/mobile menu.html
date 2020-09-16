@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <style type="text/css">
+   #openMenu{
+    width: 50px;background: black;color: white;border-radius: 5px;cursor: pointer;
+
+}
+#openMenu i {
+    font-size: 30px;
+
+
+}
+#demo{
+    
+    
+}
+
+.myMenu{
+    display: none;
+}
+.showMenu{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <button id="openMenu"> <i class="fas fa-bars" ></i>  </button>
+    <div id="demo" class="myMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Contact</a></li>
+            <li><a href="#home">Profolio</a></li>
+            <li><a href="#home">Servisec</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+document.querySelector("button#openMenu").addEventListener("click",function () {
+    document.querySelector(".myMenu").classList.toggle("showMenu")
+    
+})
+    </script>
+
+</body>
+</html>

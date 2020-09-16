@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<style type="text/css">
+#demo{
+    width: 250px;
+    background: #ddd;
+    color: black;
+    margin: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-family: arial black;
+    
+}
+.myMenu{
+    display: none;
+}
+.showMenu{
+    display: block;
+
+    animation-name : menuAnimat ;
+animation-duration:1s ;
+}
+
+#openMenu{
+    width: 50px;background: black;color: white;border-radius: 5px;cursor: pointer;
+
+}
+#openMenu i {
+    font-size: 30px;
+
+}
+
+@keyframes menuAnimat {
+    from {opacity: 0}
+    to {opacity:1 }
+}
+#demo1{
+    width: 250px;
+    background: black;
+    color: white;
+    margin: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-family: arial black;
+    float: right;
+    
+}
+.myMenuu{
+    display: none;
+}
+.showMenuu{
+    display: block;
+}
+
+#openMenuu{
+    width: 50px;background: black;color: white;border-radius: 5px;cursor: pointer;
+    float: right;
+
+}
+#openMenuu i {
+    font-size: 30px;
+
+}
+
+</style>
+    
+   
+</head>
+<body>
+    <button id="openMenu"> <i class="fas fa-bars" ></i>  </button>
+    <div id="demo" class="myMenu">
+        <h1>Ashraf Ahmed</h1>
+        profetional web developer 
+    </div>
+
+
+    <button id="openMenuu"> <i class="fas fa-bars" ></i>  </button>
+    <div id="demo1" class="myMenuu">
+        <h1>Ashraf Ahmed</h1>
+        profetional web developer 
+    </div>
+
+    <script type="text/javascript">
+    document.querySelector("button#openMenu").addEventListener("click",function () {
+       if (document.querySelector(".showMenu")) {
+            document.querySelector(".myMenu").classList.remove("showMenu");
+        } else {
+            document.querySelector("div.myMenu").classList.add("showMenu");
+        }
+        
+        
+        
+    });
+    document.querySelector("button#openMenuu").addEventListener("click",function () {
+        document.querySelector(".myMenuu").classList.toggle("showMenuu");
+        
+        
+        
+    });
+
+
+    </script>
+</body>
+</html>

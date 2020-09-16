@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo">
+<h1>hello ashraf</h1>
+    </div>
+
+    <script type="text/javascript">
+
+    document.querySelector(".demo").prepend(document.createElement("h2"))
+    document.querySelector(".demo h2").innerHTML="hello world"
+
+    document.querySelector(".demo").append(document.createElement("h3"))
+    document.querySelector(".demo h3").innerHTML="hello laptop"
+
+    document.querySelector(".demo").appendChild(document.createElement("h5"))
+    document.querySelector(".demo h5").innerHTML="hello laptop"
+
+    document.querySelector(".demo h1").className="love star"
+   
+    document.querySelector(".demo h2").classList.add("nice")
+    document.querySelector(".demo h2").classList.add("best")
+
+    document.querySelector(".demo h2").setAttribute("id","lite")
+
+    document.querySelector(".demo h3").setAttribute("style","background:blue")
+
+    document.querySelector(".demo h5").setAttribute("href","https:www.google.com")
+
+    </script>
+</body>
+</html>

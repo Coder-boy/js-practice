@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="return false;" method="GET" action="" id="loginForm">
+    
+        <input type="email" name="email" id="email" >
+        <input type="password" name="password" id="password" ><span id="errorPass" style="color:red"></span>
+        <input type="submit"  id="submit">
+    </form>
+<div class="showdata">
+
+</div>
+    <script type="text/javascript">
+    document.querySelector("#loginForm").addEventListener("submit",function () {
+      var pwd =  document.querySelector("#password").value;  
+        var countpwd = pwd.length;
+      if (countpwd<=8) {
+        document.querySelector("#errorPass").innerHTML="your password is too short!"
+      }else{
+        document.querySelector(".showdata").innerHTML=pwd;
+      }
+    });
+    </script>
+</body>
+</html>

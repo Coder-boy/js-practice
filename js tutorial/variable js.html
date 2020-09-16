@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+
+
+
+
+
+    <script>
+        var x = 10;
+        var y = "as";
+        var z =x+y;
+
+        document.getElementById("demo").innerHTML = z;
+
+        var a = 4 + 7;
+        document.getElementById("demo1").innerHTML = a;
+
+        var a = 10;
+        var b = (3 + 3)* a;
+        document.getElementById("demo2").innerHTML = b;
+
+        var s = 4 / 2;
+        document.getElementById("demo3").innerHTML = s;
+
+        var c = 5;
+        c++;
+        var n = c;
+    
+
+        document.getElementById("demo4").innerHTML = n;
+
+        var h = 3;
+        h--;
+        var r = h;
+
+        document.getElementById("demo5").innerHTML = h;
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        document.getElementById("demo6").innerHTML = fruits[2];
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+
+        document.getElementById("demo7").innerHTML = fruits.toString();
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+
+        document.getElementById("demo8").innerHTML = fruits.length;
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        document.getElementById("demo9").innerHTML = fruits.join(" * ");
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        fruits[0] = "kiwi";
+        document.getElementById("demo10").innerHTML = fruits.join(" * ");
+
+        var fruits= ["Apple", "grape", "Mango", "orange"];
+        delete fruits [2];
+        document.getElementById("demo11").innerHTML = fruits.join(" * ");
+
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        fruits.pop();
+        document.getElementById("demo12").innerHTML = fruits.join(" * ");
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        fruits.splice(2,0,"lemon","banana");
+        document.getElementById("demo13").innerHTML = fruits.join(" * ");
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        fruits.sort();
+        
+        document.getElementById("demo14").innerHTML = fruits;
+
+        var fruits = ["Apple", "grape", "Mango", "orange"];
+        fruits.reverse();
+        document.getElementById("demo15").innerHTML = fruits;
+
+    
+    </script>
+</body>
+</html>
